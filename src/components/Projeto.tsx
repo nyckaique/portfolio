@@ -140,31 +140,25 @@ export default function Projeto({
             {prisma && (
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original-wordmark.svg"
-                className="inline-block w-[30px] mx-2"
+                className="inline-block w-[30px] mx-2 invert"
                 alt="Prisma"
               />
             )}
           </p>
         </div>
         <div className="flex flex-wrap uppercase w-full gap-6 text-nowrap">
-          <button className="badge">
-            <a href={deployLink} target="_blank">
-              acesse aqui
-            </a>
-          </button>
+          <a className="badge" href={deployLink} target="_blank">
+            acesse aqui
+          </a>
           {githubLink && (
-            <button className="badge">
-              <a href={githubLink} target="_blank">
-                {githubLinkBackend ? "github front-end" : "github"}
-              </a>
-            </button>
+            <a className="badge" href={githubLink} target="_blank">
+              {githubLinkBackend ? "github front-end" : "github"}
+            </a>
           )}
           {githubLinkBackend && (
-            <button className="badge">
-              <a href={githubLinkBackend} target="_blank">
-                github back-end
-              </a>
-            </button>
+            <a className="badge" href={githubLinkBackend} target="_blank">
+              github back-end
+            </a>
           )}
         </div>
       </div>

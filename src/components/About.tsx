@@ -1,3 +1,4 @@
+import curriculo from "../assets/Nycollas Kaique Desenvolvedor Web.pdf";
 export default function About() {
   return (
     <div className="container min-h-svh">
@@ -21,6 +22,9 @@ export default function About() {
               equipes, pacote Office e informática.
             </li>
           </ul>
+          <a className="badge mt-2" href={curriculo} target="_blank">
+            Currículo Completo
+          </a>
         </div>
         <div className="max-w-[580px] p-4 text-white">
           <h3 className="text-6xl bebas-neue mb-4">Tecnologias</h3>

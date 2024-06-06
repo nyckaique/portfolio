@@ -8,35 +8,40 @@ export default function Header() {
         </h1>
         <h2 className="text-2xl text">Desenvolvedor Web Front End</h2>
         <div className="mt-4 flex uppercase w-full gap-6">
-          <button className="button bg-[var(--lime)] text-[var(--grey)] font-bold">
-            <a
-              href="https://api.whatsapp.com/send?phone=5564992673386"
-              target="_blank"
-            >
-              {" "}
-              <i className="fa fa-whatsapp" aria-hidden="true"></i>{" "}
-              <span>whatsapp</span>
-            </a>
-          </button>
-          <button className="button bg-[var(--grey)] text-[var(--lime)]">
-            <a
-              href="https://www.linkedin.com/in/nycollaskaique"
-              target="_blank"
-            >
-              {" "}
-              <i className="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-          </button>
-          <button className="button bg-[var(--grey)] text-[var(--lime)]">
-            <a href="https://github.com/nyckaique" target="_blank">
-              <i className="fa fa-github" aria-hidden="true"></i>
-            </a>
-          </button>
-          <button className="button bg-[var(--grey)] text-[var(--lime)]">
-            <a href="mailto:nycollaskaique@hotmail.com" target="_blank">
-              <i className="fa fa-envelope" aria-hidden="true"></i>
-            </a>
-          </button>
+          <a
+            className="button bg-[var(--lime)] text-[var(--grey)] font-bold"
+            href="https://api.whatsapp.com/send?phone=5564992673386"
+            target="_blank"
+          >
+            {" "}
+            <i className="fa fa-whatsapp" aria-hidden="true"></i>{" "}
+            <span>whatsapp</span>
+          </a>
+
+          <a
+            className="button bg-[var(--grey)] text-[var(--lime)]"
+            href="https://www.linkedin.com/in/nycollaskaique"
+            target="_blank"
+          >
+            {" "}
+            <i className="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+
+          <a
+            className="button bg-[var(--grey)] text-[var(--lime)]"
+            href="https://github.com/nyckaique"
+            target="_blank"
+          >
+            <i className="fa fa-github" aria-hidden="true"></i>
+          </a>
+
+          <a
+            className="button bg-[var(--grey)] text-[var(--lime)]"
+            href="mailto:nycollaskaique@hotmail.com"
+            target="_blank"
+          >
+            <i className="fa fa-envelope" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
       <div className="flex w-auto items-center">
