@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  --black: #0a0a0a;
+  --white: #fdfdfd;
+  --green: #22cc88;
+  --blue: #0055ff;
+  --purple: #8855ff;
+  --red: #ff0055;
+  --orange: #ee4444;
+  --yellow: #ffcc00;
+  --mustard: #ffaa00;
+  --background: var(--white);
+  --accent: var(--black);
+  --grey: rgb(38, 38, 38);
+  --lime: rgb(190, 242, 100);
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+.bebas-neue {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.progress-bar {
+  transform-origin: 0%;
+}
+.container {
+  @apply min-w-full  bg-[var(--black)] p-4 flex justify-evenly items-center flex-wrap border-t-2 border-neutral-500;
+}
+.header-content {
+  @apply max-w-[400px] text-white text-nowrap rounded-md flex flex-col gap-2 p-4 justify-between;
+}
+.button {
+  @apply w-fit h-[32px] max-h-[32px] flex items-center justify-center gap-2 px-4 rounded-2xl transition-all no-underline;
+}
+.button:not(:first-child) {
+  @apply rounded-[50%] aspect-square;
+}
+.button:hover {
+  @apply scale-110;
+}
+.custom-bullet-list {
+  list-style: none; /* Remove os bullets padrão */
+  padding-left: 20px; /* Adiciona espaço para os novos bullets */
+}
+
+.custom-bullet-list li {
+  position: relative;
+  margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+.custom-bullet-list li::before {
+  content: "•"; /* Substitui o bullet */
+  color: var(--lime); /* Cor do bullet */
+  position: absolute;
+  left: -20px; /* Alinha o bullet à esquerda */
+  font-size: 1.2em; /* Tamanho do bullet */
+  line-height: 1; /* Alinha verticalmente o bullet */
+}
+.badge {
+  @apply w-fit h-[32px] max-h-[32px] flex items-center justify-center gap-2 px-4 rounded-2xl transition-all no-underline bg-[var(--grey)] text-[var(--lime)];
+}
+.badge:hover {
+  @apply scale-105 bg-[var(--lime)] text-[var(--grey)];
+}
