@@ -1,9 +1,10 @@
+import { DarkModeProps } from "../App";
 import curriculo from "../assets/Nycollas Kaique Desenvolvedor Web.pdf";
-export default function About() {
+export default function About({ darkMode }: DarkModeProps) {
   return (
-    <div className="container min-h-svh">
+    <div className={` ${darkMode ? "darkMode" : ""} container min-h-svh`}>
       <div className="flex flex-wrap gap-2 justify-evenly w-full items-start">
-        <div className="max-w-[580px] p-4 text-white">
+        <div className="max-w-[580px] p-4 text-[var(--white)]">
           <h2 className="text-6xl bebas-neue mb-4">Sobre</h2>
           <ul className="custom-bullet-list text-lg flex flex-col gap-2">
             <li>Atuo como Desenvolvedor Web Front End Freelance.</li>
@@ -26,7 +27,7 @@ export default function About() {
             Currículo Completo
           </a>
         </div>
-        <div className="max-w-[580px] p-4 text-white">
+        <div className="max-w-[580px] p-4 text-[var(--white)]">
           <h3 className="text-6xl bebas-neue mb-4">Tecnologias</h3>
           <ul className="flex gap-2 flex-wrap text-sm items-center">
             <li className="badge">

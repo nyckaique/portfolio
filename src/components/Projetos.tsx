@@ -7,10 +7,15 @@ import cadastrocliente from "../assets/projetos/cadastroclientes.webp";
 import bularioeletronico from "../assets/projetos/bularioeletronico.webp";
 import moviewebapp from "../assets/projetos/moviewebapp.webp";
 import whospeaks from "../assets/projetos/whospeaks.webp";
+import { DarkModeProps } from "../App";
 
-export default function About() {
+export default function Projetos({ darkMode }: DarkModeProps) {
   return (
-    <div className="container min-h-svh gap-20 flex-col text-white items-center">
+    <div
+      className={` ${
+        darkMode ? "darkMode" : ""
+      } container min-h-svh gap-20 flex-col text-[var(--white)] items-center`}
+    >
       <h2 className="text-6xl ml-12 mr-auto bebas-neue">Projetos</h2>
       <Projeto
         img={nutrify}

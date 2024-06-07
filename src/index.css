@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  --black: #0a0a0a;
-  --white: #fdfdfd;
+  --black: #fdfdfd;
+  --white: #0a0a0a;
   --green: #22cc88;
   --blue: #0055ff;
   --purple: #8855ff;
@@ -19,6 +19,11 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+.darkMode,
+.darkMode > * {
+  --black: #0a0a0a;
+  --white: #fdfdfd;
 }
 
 * {
@@ -38,7 +43,7 @@ body {
   @apply min-w-full  bg-[var(--black)] p-4 flex justify-evenly items-center flex-wrap border-t-2 border-neutral-500;
 }
 .header-content {
-  @apply max-w-[400px] text-white text-nowrap rounded-md flex flex-col gap-2 p-4 justify-between;
+  @apply max-w-[400px] text-[var(--white)] text-nowrap rounded-md flex flex-col gap-2 p-4 justify-between;
 }
 .button {
   @apply w-fit h-[32px] max-h-[32px] flex items-center justify-center gap-2 px-4 rounded-2xl transition-all no-underline;
@@ -72,4 +77,33 @@ body {
 }
 .badge:hover {
   @apply scale-105 bg-[var(--lime)] text-[var(--grey)];
+}
+.switch {
+  width: 40px;
+  height: 24px;
+  background-color: var(--grey);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 50px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.switch[data-darkMode="true"] {
+  justify-content: flex-end;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.handle {
+  width: 20px;
+  height: 20px;
+  background-color: var(--lime);
+  border-radius: 50%;
+}
+.switch[data-darkMode="true"] .handle {
+  background-color: var(--grey);
+}
+.shadow-text {
+  text-shadow: 1px 1px 2px black;
 }

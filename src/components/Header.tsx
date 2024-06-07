@@ -1,7 +1,13 @@
+import { DarkModeProps } from "../App";
 import avatar from "../assets/avatar.jpeg";
-export default function Header() {
+
+export default function Header({ darkMode }: DarkModeProps) {
   return (
-    <div className="container min-h-[75svh] border-none">
+    <div
+      className={`${
+        darkMode ? "darkMode" : ""
+      } container min-h-[75svh] border-none`}
+    >
       <div className="header-content">
         <h1 className="text-4xl sm:text-6xl uppercase bebas-neue">
           Nycollas Kaique
@@ -48,7 +54,7 @@ export default function Header() {
         <img
           src={avatar}
           alt=""
-          className="h-[300px] w-auto bg-black rounded-md object-cover "
+          className="h-[300px] w-auto bg-[var(--black)] rounded-md object-cover "
         />
       </div>
     </div>
