@@ -9,7 +9,7 @@ export default function DarkMode({ darkMode, toggleSwitch }: DarkModeProps) {
   };
   return (
     <div
-      className="switch fixed top-4 left-4"
+      className="switch fixed top-4 left-4 z-50"
       data-darkMode={darkMode}
       onClick={toggleSwitch}
     >
