@@ -1,5 +1,5 @@
 import { DarkModeProps } from "../App";
-import curriculo from "../assets/Nycollas Kaique Desenvolvedor Web.pdf";
+import curriculo from "../assets/Nycollas Kaique Desenvolvedor Web Front-End.pdf";
 export default function About({ darkMode }: DarkModeProps) {
   return (
     <div className={` ${darkMode ? "darkMode" : ""} container min-h-svh`}>
