@@ -1,4 +1,5 @@
 import Projeto from "./Projeto";
+import colmeias from "../assets/projetos/colmeias.png";
 import nutrify from "../assets/projetos/nutrify.png";
 import echogestor from "../assets//projetos/echogestor.webp";
 import gabrielcarati from "../assets/projetos/gabrielcarati.webp";
@@ -17,6 +18,16 @@ export default function Projetos({ darkMode }: DarkModeProps) {
       } container min-h-svh gap-20 flex-col text-[var(--white)] items-center`}
     >
       <h2 className="text-6xl ml-12 mr-auto bebas-neue">Projetos</h2>
+      <Projeto
+        img={colmeias}
+        titulo="Colmeias"
+        descricao="Personalização completa de página de produtos para WooCommerce em site WordPress - Elementor"
+        deployLink="https://www.colmeiasdesign.com/loja/"
+        wordpress={true}
+        html={true}
+        css={true}
+        javascript={true}
+      />
       <Projeto
         img={nutrify}
         titulo="Nutrify"
