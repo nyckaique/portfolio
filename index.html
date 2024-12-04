@@ -2,22 +2,6 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Nycollas Kaique" />
     <meta name="description" content="Portfolio pessoal de projetos" />
@@ -27,10 +11,1464 @@
       name="keywords"
       content="Nycollas, Kaique, Desenvolvedor, Web, Front, End, Frontend, Front-end, React, Typescript, Javascript, Dev, Dev Junior, Junior, Jr, Vagas, Linkedin, Currículo"
     />
-    <title>Nycollas Kaique - Desenvolvedor Web Front End</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/fancybox.css" />
+    <link rel="stylesheet" href="assets/css/lenis.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Nycollas Kaique - Dev Frontend</title>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body class="container-fluid">
+    <!-- CABEÇALHO -->
+    <header class="container px-0 fixed-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand pe-5" href="#">Nycollas Kaique</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#hero"
+                  ><span>home</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre"><span>sobre</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#clientes"
+                  ><span>cases clientes</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pessoal"
+                  ><span>projetos pessoais</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato"><span>contato</span></a>
+              </li>
+            </ul>
+            <div class="socials">
+              <a
+                class="social-item"
+                href="https://wa.me/64992673386"
+                target="_blank"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 4.86429C8.10536 4.86429 4.93929 8.03036 4.93393 11.925C4.93393 13.2589 5.30893 14.5607 6.01607 15.6804L6.18214 15.9482L5.46964 18.5518L8.14286 17.85L8.4 18.0054C9.48214 18.6482 10.725 18.9911 11.9946 18.9911H12C15.8893 18.9911 19.1411 15.825 19.1411 11.9304C19.1411 10.0446 18.3268 8.27143 16.9929 6.9375C15.6536 5.59821 13.8857 4.86429 12 4.86429ZM16.1518 14.9571C15.975 15.4554 15.1286 15.9054 14.7214 15.9643C14.0464 16.0661 13.5214 16.0125 12.1768 15.4339C10.05 14.5125 8.65714 12.3696 8.55 12.2304C8.44286 12.0911 7.68214 11.0786 7.68214 10.0339C7.68214 8.98929 8.22857 8.475 8.42679 8.26071C8.61964 8.04643 8.85 7.99286 8.99464 7.99286C9.13393 7.99286 9.27857 7.99286 9.40179 7.99821C9.53036 8.00357 9.70714 7.95 9.87857 8.3625C10.0554 8.78572 10.4786 9.83036 10.5321 9.9375C10.5857 10.0446 10.6232 10.1679 10.5482 10.3071C10.1411 11.1214 9.70714 11.0893 9.92679 11.4643C10.7464 12.8732 11.5661 13.3607 12.8143 13.9875C13.0286 14.0946 13.1518 14.0786 13.275 13.9339C13.3982 13.7946 13.8054 13.3125 13.9446 13.1036C14.0839 12.8893 14.2286 12.9268 14.4214 12.9964C14.6143 13.0661 15.6589 13.5804 15.8732 13.6875C16.0875 13.7946 16.2268 13.8482 16.2804 13.9339C16.3286 14.0357 16.3286 14.4643 16.1518 14.9571ZM21.4286 0H2.57143C1.15179 0 0 1.15179 0 2.57143V21.4286C0 22.8482 1.15179 24 2.57143 24H21.4286C22.8482 24 24 22.8482 24 21.4286V2.57143C24 1.15179 22.8482 0 21.4286 0ZM11.9946 20.4214C10.5696 20.4214 9.17143 20.0625 7.93393 19.3875L3.42857 20.5714L4.63393 16.1679C3.88929 14.8821 3.49821 13.4196 3.49821 11.9196C3.50357 7.2375 7.3125 3.42857 11.9946 3.42857C14.2661 3.42857 16.3982 4.3125 18.0054 5.91964C19.6071 7.52679 20.5714 9.65893 20.5714 11.9304C20.5714 16.6125 16.6768 20.4214 11.9946 20.4214Z"
+                    fill="#1A1A1A"
+                  />
+                </svg>
+              </a>
+              <a
+                class="social-item"
+                href="https://www.linkedin.com/in/nycollaskaique/"
+                target="_blank"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.2857 0H1.70893C0.766071 0 0 0.776786 0 1.73036V22.2696C0 23.2232 0.766071 24 1.70893 24H22.2857C23.2286 24 24 23.2232 24 22.2696V1.73036C24 0.776786 23.2286 0 22.2857 0ZM7.25357 20.5714H3.69643V9.11786H7.25893V20.5714H7.25357ZM5.475 7.55357C4.33393 7.55357 3.4125 6.62679 3.4125 5.49107C3.4125 4.35536 4.33393 3.42857 5.475 3.42857C6.61071 3.42857 7.5375 4.35536 7.5375 5.49107C7.5375 6.63214 6.61607 7.55357 5.475 7.55357ZM20.5875 20.5714H17.0304V15C17.0304 13.6714 17.0036 11.9625 15.1821 11.9625C13.3286 11.9625 13.0446 13.4089 13.0446 14.9036V20.5714H9.4875V9.11786H12.9V10.6821H12.9482C13.425 9.78214 14.5875 8.83393 16.3179 8.83393C19.9179 8.83393 20.5875 11.2071 20.5875 14.2929V20.5714Z"
+                    fill="#1A1A1A"
+                  />
+                </svg>
+              </a>
+              <a
+                class="social-item"
+                href="mailto:nycollaskaique@hotmail.com"
+                target="_blank"
+              >
+                <svg
+                  width="24"
+                  height="18"
+                  viewBox="0 0 24 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.5453 5.94375C23.7281 5.79844 24 5.93437 24 6.16406V15.75C24 16.9922 22.9922 18 21.75 18H2.25C1.00781 18 0 16.9922 0 15.75V6.16875C0 5.93438 0.267187 5.80312 0.454687 5.94844C1.50469 6.76406 2.89688 7.8 7.67813 11.2734C8.66719 11.9953 10.3359 13.5141 12 13.5047C13.6734 13.5188 15.375 11.9672 16.3266 11.2734C21.1078 7.8 22.4953 6.75938 23.5453 5.94375ZM12 12C13.0875 12.0188 14.6531 10.6313 15.4406 10.0594C21.6609 5.54531 22.1344 5.15156 23.5687 4.02656C23.8406 3.81562 24 3.4875 24 3.14062V2.25C24 1.00781 22.9922 0 21.75 0H2.25C1.00781 0 0 1.00781 0 2.25V3.14062C0 3.4875 0.159375 3.81094 0.43125 4.02656C1.86563 5.14687 2.33906 5.54531 8.55938 10.0594C9.34688 10.6313 10.9125 12.0188 12 12Z"
+                    fill="#1A1A1A"
+                  />
+                </svg>
+              </a>
+              <a
+                class="social-item"
+                href="https://github.com/nyckaique"
+                target="_blank"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.4286 0H2.57143C1.15179 0 0 1.15179 0 2.57143V21.4286C0 22.8482 1.15179 24 2.57143 24H21.4286C22.8482 24 24 22.8482 24 21.4286V2.57143C24 1.15179 22.8482 0 21.4286 0ZM14.8554 20.5554C14.4054 20.6357 14.2393 20.3571 14.2393 20.1268C14.2393 19.8375 14.25 18.3589 14.25 17.1643C14.25 16.3286 13.9714 15.7982 13.6446 15.5196C15.6268 15.3 17.7161 15.0268 17.7161 11.6036C17.7161 10.6286 17.3679 10.1411 16.8 9.51429C16.8911 9.28393 17.1964 8.33571 16.7089 7.10357C15.9643 6.87321 14.2607 8.0625 14.2607 8.0625C13.5536 7.86429 12.7875 7.7625 12.0321 7.7625C11.2768 7.7625 10.5107 7.86429 9.80357 8.0625C9.80357 8.0625 8.1 6.87321 7.35536 7.10357C6.86786 8.33036 7.16786 9.27857 7.26429 9.51429C6.69643 10.1411 6.42857 10.6286 6.42857 11.6036C6.42857 15.0107 8.42679 15.3 10.4089 15.5196C10.1518 15.75 9.92143 16.1464 9.84107 16.7143C9.33214 16.9446 8.03036 17.3411 7.25357 15.9696C6.76607 15.1232 5.8875 15.0536 5.8875 15.0536C5.01964 15.0429 5.82857 15.6 5.82857 15.6C6.40714 15.8679 6.81429 16.8964 6.81429 16.8964C7.33393 18.4875 9.81964 17.9518 9.81964 17.9518C9.81964 18.6964 9.83036 19.9071 9.83036 20.1268C9.83036 20.3571 9.66964 20.6357 9.21429 20.5554C5.67857 19.3714 3.20357 16.0071 3.20357 12.075C3.20357 7.15714 6.96429 3.42321 11.8821 3.42321C16.8 3.42321 20.7857 7.15714 20.7857 12.075C20.7911 16.0071 18.3911 19.3768 14.8554 20.5554ZM9.6 17.2821C9.49821 17.3036 9.40179 17.2607 9.39107 17.1911C9.38036 17.1107 9.45 17.0411 9.55179 17.0196C9.65357 17.0089 9.75 17.0518 9.76071 17.1214C9.77679 17.1911 9.70714 17.2607 9.6 17.2821ZM9.09107 17.2339C9.09107 17.3036 9.01071 17.3625 8.90357 17.3625C8.78571 17.3732 8.70536 17.3143 8.70536 17.2339C8.70536 17.1643 8.78571 17.1054 8.89286 17.1054C8.99464 17.0946 9.09107 17.1536 9.09107 17.2339ZM8.35714 17.175C8.33571 17.2446 8.22857 17.2768 8.1375 17.2446C8.03571 17.2232 7.96607 17.1429 7.9875 17.0732C8.00893 17.0036 8.11607 16.9714 8.20714 16.9929C8.31429 17.025 8.38393 17.1054 8.35714 17.175ZM7.69821 16.8857C7.65 16.9446 7.54821 16.9339 7.46786 16.8536C7.3875 16.7839 7.36607 16.6821 7.41964 16.6339C7.46786 16.575 7.56964 16.5857 7.65 16.6661C7.71964 16.7357 7.74643 16.8429 7.69821 16.8857ZM7.21071 16.3982C7.1625 16.4304 7.07143 16.3982 7.0125 16.3179C6.95357 16.2375 6.95357 16.1464 7.0125 16.1089C7.07143 16.0607 7.1625 16.0982 7.21071 16.1786C7.26964 16.2589 7.26964 16.3554 7.21071 16.3982ZM6.8625 15.8786C6.81429 15.9268 6.73393 15.9 6.675 15.8464C6.61607 15.7768 6.60536 15.6964 6.65357 15.6589C6.70179 15.6107 6.78214 15.6375 6.84107 15.6911C6.9 15.7607 6.91071 15.8411 6.8625 15.8786ZM6.50357 15.4821C6.48214 15.5304 6.4125 15.5411 6.35357 15.5036C6.28393 15.4714 6.25179 15.4125 6.27321 15.3643C6.29464 15.3321 6.35357 15.3161 6.42321 15.3429C6.49286 15.3804 6.525 15.4393 6.50357 15.4821Z"
+                    fill="#1A1A1A"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO BANNER -->
+    <div
+      id="hero"
+      class="container min-vh-100 py-5 px-0 d-flex align-items-center justify-content-between"
+    >
+      <div class="row g-5 g-md-2 w-100">
+        <div class="col-md-6 d-flex flex-column" style="gap: 1.625rem">
+          <h2 class="pretitle">Nycollas Kaique</h2>
+          <h1 class="title-extraLarge">
+            desenvolvedor web <span style="color: var(--purple)">frontend</span>
+          </h1>
+          <p class="desc scroll-text">scroll <br />to explore</p>
+        </div>
+        <div class="col-md-6 container-hero-items">
+          <div class="row g-3 align-items-end mb-3">
+            <div class="col-2">
+              <div class="hero-item divxs">
+                <img
+                  src="assets/img/cadastroclientes/cadastroclientes.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="hero-item divmd">
+                <img
+                  src="assets/img/kpopgeneration/kpopgeneration.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row g-3 mb-3 align-items-end">
+            <div class="col-5">
+              <div class="hero-item divlg">
+                <img src="assets/img/daax/daax.png" alt="" />
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="hero-item divlg">
+                <img src="assets/img/produtive/produtive.png" alt="" />
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="hero-item divsm">
+                <img src="assets/img/nutrify/nutrify.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="row g-3 align-items-start">
+            <div class="col-4">
+              <div class="hero-item divmd">
+                <img src="assets/img/colmeias/colmeias-01.png" alt="" />
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="hero-item divxl">
+                <img src="assets/img/gabrielcarati/gabrielcarati.png" alt="" />
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="hero-item divxs">
+                <img src="assets/img/echogestor/echogestor.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TECH OWL CAROUSEL -->
+    <div id="tecnologias" class="container py-5 px-0">
+      <div class="owl-carousel">
+        <div class="item">
+          <img src="assets/img/svg/bootstrap.svg" alt="bootstrap" />
+        </div>
+        <div class="item">
+          <img src="assets/img/svg/css3.svg" alt="css" />
+        </div>
+        <div class="item">
+          <img src="assets/img/svg/elementor.svg" alt="css" />
+        </div>
+        <div class="item">
+          <img src="assets/img/svg/figma.svg" alt="figma" />
+        </div>
+        <div class="item">
+          <img src="assets/img/svg/firebase.svg" alt="firebase" />
+        </div>
+        <div class="item">
+          <svg
+            class="svg-fill"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.4286 0H2.57143C1.15179 0 0 1.15179 0 2.57143V21.4286C0 22.8482 1.15179 24 2.57143 24H21.4286C22.8482 24 24 22.8482 24 21.4286V2.57143C24 1.15179 22.8482 0 21.4286 0ZM14.8554 20.5554C14.4054 20.6357 14.2393 20.3571 14.2393 20.1268C14.2393 19.8375 14.25 18.3589 14.25 17.1643C14.25 16.3286 13.9714 15.7982 13.6446 15.5196C15.6268 15.3 17.7161 15.0268 17.7161 11.6036C17.7161 10.6286 17.3679 10.1411 16.8 9.51429C16.8911 9.28393 17.1964 8.33571 16.7089 7.10357C15.9643 6.87321 14.2607 8.0625 14.2607 8.0625C13.5536 7.86429 12.7875 7.7625 12.0321 7.7625C11.2768 7.7625 10.5107 7.86429 9.80357 8.0625C9.80357 8.0625 8.1 6.87321 7.35536 7.10357C6.86786 8.33036 7.16786 9.27857 7.26429 9.51429C6.69643 10.1411 6.42857 10.6286 6.42857 11.6036C6.42857 15.0107 8.42679 15.3 10.4089 15.5196C10.1518 15.75 9.92143 16.1464 9.84107 16.7143C9.33214 16.9446 8.03036 17.3411 7.25357 15.9696C6.76607 15.1232 5.8875 15.0536 5.8875 15.0536C5.01964 15.0429 5.82857 15.6 5.82857 15.6C6.40714 15.8679 6.81429 16.8964 6.81429 16.8964C7.33393 18.4875 9.81964 17.9518 9.81964 17.9518C9.81964 18.6964 9.83036 19.9071 9.83036 20.1268C9.83036 20.3571 9.66964 20.6357 9.21429 20.5554C5.67857 19.3714 3.20357 16.0071 3.20357 12.075C3.20357 7.15714 6.96429 3.42321 11.8821 3.42321C16.8 3.42321 20.7857 7.15714 20.7857 12.075C20.7911 16.0071 18.3911 19.3768 14.8554 20.5554ZM9.6 17.2821C9.49821 17.3036 9.40179 17.2607 9.39107 17.1911C9.38036 17.1107 9.45 17.0411 9.55179 17.0196C9.65357 17.0089 9.75 17.0518 9.76071 17.1214C9.77679 17.1911 9.70714 17.2607 9.6 17.2821ZM9.09107 17.2339C9.09107 17.3036 9.01071 17.3625 8.90357 17.3625C8.78571 17.3732 8.70536 17.3143 8.70536 17.2339C8.70536 17.1643 8.78571 17.1054 8.89286 17.1054C8.99464 17.0946 9.09107 17.1536 9.09107 17.2339ZM8.35714 17.175C8.33571 17.2446 8.22857 17.2768 8.1375 17.2446C8.03571 17.2232 7.96607 17.1429 7.9875 17.0732C8.00893 17.0036 8.11607 16.9714 8.20714 16.9929C8.31429 17.025 8.38393 17.1054 8.35714 17.175ZM7.69821 16.8857C7.65 16.9446 7.54821 16.9339 7.46786 16.8536C7.3875 16.7839 7.36607 16.6821 7.41964 16.6339C7.46786 16.575 7.56964 16.5857 7.65 16.6661C7.71964 16.7357 7.74643 16.8429 7.69821 16.8857ZM7.21071 16.3982C7.1625 16.4304 7.07143 16.3982 7.0125 16.3179C6.95357 16.2375 6.95357 16.1464 7.0125 16.1089C7.07143 16.0607 7.1625 16.0982 7.21071 16.1786C7.26964 16.2589 7.26964 16.3554 7.21071 16.3982ZM6.8625 15.8786C6.81429 15.9268 6.73393 15.9 6.675 15.8464C6.61607 15.7768 6.60536 15.6964 6.65357 15.6589C6.70179 15.6107 6.78214 15.6375 6.84107 15.6911C6.9 15.7607 6.91071 15.8411 6.8625 15.8786ZM6.50357 15.4821C6.48214 15.5304 6.4125 15.5411 6.35357 15.5036C6.28393 15.4714 6.25179 15.4125 6.27321 15.3643C6.29464 15.3321 6.35357 15.3161 6.42321 15.3429C6.49286 15.3804 6.525 15.4393 6.50357 15.4821Z"
+              fill="#1A1A1A"
+            />
+          </svg>
+        </div>
+        <div class="item">
+          <img src="assets/img/svg/html5.svg" alt="html" />
+        </div>
+        <div class="item">
+          <img src="assets/img/svg/js.svg" alt="javascript" />
+        </div>
+        <div class="item">
+          <img
+            src="assets/img/svg/materialui.svg"
+            alt="materialui material ui mui"
+          />
+        </div>
+        <div class="item">
+          <img src="assets/img/svg/mongodb.svg" alt="mongodb" />
+        </div>
+        <div class="item">
+          <img src="assets/img/svg/nodejs.svg" alt="node nodejs" />
+        </div>
+        <div class="item">
+          <img src="assets/img/svg/prisma.svg" alt="prisma" />
+        </div>
+        <div class="item">
+          <img src="assets/img/svg/react.svg" alt="react" />
+        </div>
+        <div class="item">
+          <svg
+            class="svg-fill"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 128 128"
+          >
+            <path
+              d="M13.227 56.074c-3.528 0-5.727 1.778-6.602 5.3C7.95 59.603 9.5 58.95 11.25 59.399c1 .25 1.728.977 2.524 1.801 1.3 1.324 2.8 2.852 6.078 2.852 3.523 0 5.723-1.778 6.598-5.301-1.324 1.773-2.875 2.425-4.625 1.976-1-.25-1.723-.976-2.524-1.8-1.3-1.324-2.801-2.852-6.074-2.852zm43.922.477v13.574h2V56.55h-2zm-3.324.324c-.7 0-1.274.574-1.274 1.273 0 .676.575 1.277 1.274 1.277.699 0 1.3-.6 1.277-1.277 0-.699-.577-1.273-1.277-1.273zm23 0c-.7 0-1.274.574-1.274 1.273 0 .677.575 1.277 1.274 1.277.727 0 1.3-.6 1.277-1.277 0-.699-.577-1.273-1.277-1.273zm21.352.226v5.024c-.7-.977-1.801-1.574-3.25-1.574-2.528 0-4.625 2.125-4.625 4.898 0 2.75 2.097 4.902 4.625 4.902 1.449 0 2.55-.6 3.25-1.578v1.352h2V57.102h-2zm-60.824.625-2 .598v2.5H33.65v1.926h1.703v4.476c0 2.421 1.224 3.274 4.324 2.899v-1.801c-1.527.074-2.3.101-2.3-1.098V62.75h2.273v-1.926h-2.297v-3.098zm7.875 2.825c-2.528 0-4.625 2.125-4.625 4.898 0 2.75 2.098 4.902 4.625 4.902 1.45 0 2.547-.6 3.25-1.578v1.352h2v-9.301h-2v1.3c-.704-.976-1.801-1.573-3.25-1.573zm39.824.023c-1.25 0-2.25.477-2.875 1.477v-1.2h-2v9.297h2v-5c0-1.898 1.05-2.672 2.375-2.672 1.25 0 2.074.723 2.074 2.149v5.5h2v-5.727c0-2.398-1.5-3.824-3.574-3.824zm21.848 0c-2.824 0-4.922 2.124-4.922 4.902 0 2.75 2.126 4.899 4.922 4.899 1.829 0 3.426-.95 4.176-2.426l-1.723-.973c-.454.847-1.352 1.422-2.477 1.422-1.625 0-2.875-1.25-2.875-2.922 0-1.676 1.227-2.926 2.875-2.926 1.125 0 2.051.551 2.45 1.426l1.726-1c-.75-1.453-2.323-2.402-4.152-2.402zm8.875.027c-1.898 0-3.399 1.098-3.399 2.848 0 3.323 5 2.403 5 4.05 0 .75-.676 1.052-1.574 1.052-1.028 0-1.778-.5-2.074-1.352l-1.727 1c.601 1.324 1.95 2.176 3.801 2.176 2 0 3.625-1.023 3.625-2.875 0-3.45-5-2.425-5-4.125 0-.65.626-.977 1.348-.95.778 0 1.426.324 1.75 1.051l1.703-.953c-.653-1.222-1.925-1.922-3.453-1.922zm8.578 0c-1.903 0-3.402 1.098-3.402 2.848 0 3.323 5 2.403 5 4.05 0 .75-.677 1.052-1.575 1.052-1.024 0-1.774-.5-2.074-1.352l-1.726 1c.6 1.324 1.948 2.176 3.8 2.176 2 0 3.625-1.023 3.625-2.875 0-3.45-5-2.425-5-4.125 0-.65.626-.977 1.352-.95.774 0 1.422.324 1.75 1.051l1.7-.953c-.654-1.222-1.927-1.922-3.45-1.922zm-71.527.223v9.3h2v-9.3h-2zm7.852 0 2.925 9.3h1.973l1.95-6.273 1.925 6.274h1.977l2.925-9.301h-2.125l-1.83 6.426-1.92-6.426h-1.925L64.6 67.25l-1.798-6.426h-2.125zm15.148 0v9.3h2v-9.3h-2zM45.525 62.5c1.676 0 2.953 1.25 2.953 2.976 0 1.722-1.277 2.973-2.953 2.973-1.672 0-2.922-1.25-2.95-2.973 0-1.727 1.279-2.976 2.95-2.976zm49.703 0c1.672 0 2.949 1.25 2.949 2.976 0 1.722-1.277 2.973-2.95 2.973-1.675 0-2.953-1.25-2.953-2.973 0-1.727 1.278-2.976 2.953-2.976zM6.603 64C3.075 64 .876 65.774 0 69.3c1.324-1.776 2.875-2.425 4.625-1.976 1 .25 1.727.977 2.523 1.8 1.301 1.325 2.8 2.852 6.078 2.852 3.523 0 5.723-1.777 6.598-5.3-1.324 1.773-2.875 2.426-4.625 1.972-1-.25-1.722-.973-2.523-1.797C11.399 65.522 9.899 64 6.603 64z"
+            />
+          </svg>
+        </div>
+        <div class="item">
+          <img src="assets/img/svg/typescript.svg" alt="typescript" />
+        </div>
+        <div class="item">
+          <img src="assets/img/svg/vite.svg" alt="vite" />
+        </div>
+        <div class="item">
+          <img src="assets/img/svg/woocommerce.svg" alt="woocommerce" />
+        </div>
+        <div class="item">
+          <img src="assets/img/svg/wordpress.svg" alt="wordpress wp" />
+        </div>
+      </div>
+    </div>
+
+    <!-- SOBRE -->
+    <div id="sobre" class="container py-5 px-0">
+      <h3 class="pretitle">conheça um pouco mais</h3>
+      <h2 class="title-large">sobre <br />mim</h2>
+      <div class="row mx-0 g-3 g-sm-5 sobre-item mt-3">
+        <div class="col-sm-4 px-0 mt-0 img-div">
+          <img src="assets/img/produtive/produtive.png" alt="" />
+        </div>
+        <div class="col-sm-8">
+          <h4 class="title-medium">web</h4>
+          <p class="desc">
+            Trabalho com desenvolvimento web, principalmente com frontend. Dou
+            vida a ideia do seu negócio, seja ele uma landing page
+            institucional, um blog WordPress ou um projeto com React JS.
+          </p>
+        </div>
+      </div>
+      <div class="row mx-0 g-3 g-sm-5 sobre-item mt-3">
+        <div class="col-sm-4 px-0 mt-0 img-div">
+          <img src="assets/img/gabrielcarati/gabrielcarati.png" alt="" />
+        </div>
+        <div class="col-sm-8">
+          <h4 class="title-medium">design</h4>
+          <p class="desc">
+            Transformo seu design do Figma para o código com fidelidade.
+            Trabalho com ferramentas atualizadas para design, como Bootstrap,
+            CSS 5 e Material UI.
+          </p>
+        </div>
+      </div>
+      <div class="row mx-0 g-3 g-sm-5 sobre-item mt-3">
+        <div class="col-sm-4 px-0 mt-0 img-div">
+          <img src="assets/img/daax/daax.png" alt="" />
+        </div>
+        <div class="col-sm-8">
+          <h4 class="title-medium">tecnologia</h4>
+          <p class="desc">
+            Além de projetos WordPress com PHP ou Elementor, realizo trabalhos
+            com HTML, CSS e JavaScript e também vou além para o React,
+            TypeScript e Firebase.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASES CLIENTES -->
+    <div id="clientes" class="container p-5">
+      <h3 class="pretitle">confira os</h3>
+      <h2 class="title-large">projetos dos <br />clientes</h2>
+      <div class="cases-content pt-5">
+        <!-- DAAX -->
+        <div
+          class="cases-item"
+          style="
+            background: #093968;
+            translate: none;
+            rotate: none;
+            scale: none;
+            opacity: 1;
+            visibility: inherit;
+            transform: translate(0px, 0px);
+          "
+        >
+          <div class="cases-img-wrapper">
+            <a href="assets/img/daax/daax.png" data-fancybox="daax">
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/daax/daax.png"
+                alt="daax"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/daax/daax-1.png"
+              data-fancybox="daax"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/daax/daax-1.png"
+                alt="daax"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/daax/daax-2.png"
+              data-fancybox="daax"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/daax/daax-2.png"
+                alt="daax"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/daax/daax-3.png"
+              data-fancybox="daax"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/daax/daax-3.png"
+                alt="daax"
+                data-ll-status="loaded"
+              />
+            </a>
+          </div>
+          <div class="cases-info">
+            <div class="cases-title">DAAX</div>
+            <p class="cases-desc">
+              Site completo bilíngue em WordPress, utilizando PHP, HTML e o
+              plugin ACF para criar páginas dinâmicas e atender todas as
+              necessidades da holding.
+            </p>
+            <div class="d-flex gap-2">
+              <p>Desenvolvido em conjunto com</p>
+              <a
+                href="https://www.quatroventos.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="assets/img/svg/logo-quatroventos.svg"
+                  alt=""
+                  width="100px"
+                  height="auto"
+                />
+              </a>
+            </div>
+            <div class="d-flex gap-2 tech">
+              <img src="assets/img/svg/wordpress.svg" alt="" />
+              <img src="assets/img/svg/html5.svg" alt="" />
+              <img src="assets/img/svg/css3.svg" alt="" />
+              <img src="assets/img/svg/js.svg" alt="" />
+            </div>
+            <a
+              href="https://www.daax.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="button button-outline">
+                <span>acessar</span>
+                <svg class="arrow" viewBox="0 0 24 24">
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- PRODUTIVE -->
+        <div
+          class="cases-item"
+          style="
+            background: #8a8b89;
+            translate: none;
+            rotate: none;
+            scale: none;
+            opacity: 1;
+            visibility: inherit;
+            transform: translate(0px, 0px);
+          "
+        >
+          <div class="cases-img-wrapper">
+            <a
+              href="assets/img/produtive/produtive.png"
+              data-fancybox="produtive"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/produtive/produtive.png"
+                alt="produtive"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/produtive/produtive-1.png"
+              data-fancybox="produtive"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/produtive/produtive-1.png"
+                alt="produtive"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/produtive/produtive-2.png"
+              data-fancybox="produtive"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/produtive/produtive-2.png"
+                alt="produtive"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/produtive/produtive-3.png"
+              data-fancybox="produtive"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/produtive/produtive-3.png"
+                alt="produtive"
+                data-ll-status="loaded"
+              />
+            </a>
+          </div>
+          <div class="cases-info">
+            <div class="cases-title">Produtive</div>
+            <p class="cases-desc">
+              Novo site com WordPress e Elementor para atualizar todo o layout e
+              experiência que o cliente quer transmitir nessa nova fase em seu
+              negócio.
+            </p>
+            <div class="d-flex gap-2">
+              <p>Desenvolvido em conjunto com</p>
+              <a
+                href="https://www.quatroventos.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="assets/img/svg/logo-quatroventos.svg"
+                  alt=""
+                  width="100px"
+                  height="auto"
+                />
+              </a>
+            </div>
+            <div class="d-flex gap-2 tech">
+              <img src="assets/img/svg/wordpress.svg" alt="" />
+              <img src="assets/img/svg/elementor.svg" alt="" />
+              <img src="assets/img/svg/html5.svg" alt="" />
+              <img src="assets/img/svg/css3.svg" alt="" />
+              <img src="assets/img/svg/js.svg" alt="" />
+            </div>
+            <a
+              href="https://www.produtive.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="button button-outline">
+                <span>acessar</span>
+                <svg class="arrow" viewBox="0 0 24 24">
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- COLMEIAS -->
+        <div
+          class="cases-item"
+          style="
+            background: #a71134;
+            translate: none;
+            rotate: none;
+            scale: none;
+            opacity: 1;
+            visibility: inherit;
+            transform: translate(0px, 0px);
+          "
+        >
+          <div class="cases-img-wrapper">
+            <a
+              href="assets/img/colmeias/colmeias-01.png"
+              data-fancybox="colmeias"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/colmeias/colmeias-01.png"
+                alt="colmeias"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/colmeias/colmeias-1.png"
+              data-fancybox="colmeias"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/colmeias/colmeias-1.png"
+                alt="colmeias"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/colmeias/colmeias-2.png"
+              data-fancybox="colmeias"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/colmeias/colmeias-2.png"
+                alt="colmeias"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/colmeias/colmeias-3.png"
+              data-fancybox="colmeias"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/colmeias/colmeias-3.png"
+                alt="colmeias"
+                data-ll-status="loaded"
+              />
+            </a>
+          </div>
+          <div class="cases-info">
+            <div class="cases-title">Colmeias</div>
+            <p class="cases-desc">
+              Personalização completa de página de produtos para WooCommerce em
+              site WordPress - Elementor
+            </p>
+            <div class="d-flex gap-2">
+              <p>Desenvolvido em conjunto com</p>
+              <a
+                href="https://www.quatroventos.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="assets/img/svg/logo-quatroventos.svg"
+                  alt=""
+                  width="100px"
+                  height="auto"
+                />
+              </a>
+            </div>
+            <div class="d-flex gap-2 tech">
+              <img src="assets/img/svg/wordpress.svg" alt="" />
+              <img src="assets/img/svg/woocommerce.svg" alt="" />
+              <img src="assets/img/svg/html5.svg" alt="" />
+              <img src="assets/img/svg/css3.svg" alt="" />
+              <img src="assets/img/svg/js.svg" alt="" />
+            </div>
+            <a
+              href="https://www.colmeiasdesign.com/loja/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="button button-outline">
+                <span>acessar</span>
+                <svg class="arrow" viewBox="0 0 24 24">
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- GABRIEL CARATI -->
+        <div
+          class="cases-item"
+          style="
+            background: #330d0a;
+            translate: none;
+            rotate: none;
+            scale: none;
+            opacity: 1;
+            visibility: inherit;
+            transform: translate(0px, 0px);
+          "
+        >
+          <div class="cases-img-wrapper">
+            <a
+              href="assets/img/gabrielcarati/gabrielcarati.png"
+              data-fancybox="gabriel"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/gabrielcarati/gabrielcarati.png"
+                alt="gabriel carati"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/gabrielcarati/gabrielcarati-1.png"
+              data-fancybox="gabriel"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/gabrielcarati/gabrielcarati-1.png"
+                alt="gabriel carati"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/gabrielcarati/gabrielcarati-2.png"
+              data-fancybox="gabriel"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/gabrielcarati/gabrielcarati-2.png"
+                alt="gabriel carati"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/gabrielcarati/gabrielcarati-3.png"
+              data-fancybox="gabriel"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/gabrielcarati/gabrielcarati-3.png"
+                alt="gabriel carati"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/gabrielcarati/gabrielcarati-4.png"
+              data-fancybox="gabriel"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/gabrielcarati/gabrielcarati-4.png"
+                alt="gabriel carati"
+                data-ll-status="loaded"
+              />
+            </a>
+          </div>
+          <div class="cases-info">
+            <div class="cases-title">The Art of Gabriel Carati</div>
+            <p class="cases-desc">
+              Um site de portfolio profissional para cliente ilustrador feito a
+              partir do WordPress com plugins do Elementor, dentro outros. O
+              site inclui apresentações, galerias, postagens em blog, formulário
+              de contato e diversas páginas de navegação e conteúdo.
+            </p>
+            <div class="d-flex gap-2 tech">
+              <img src="assets/img/svg/wordpress.svg" alt="" />
+              <img src="assets/img/svg/elementor.svg" alt="" />
+              <img src="assets/img/svg/html5.svg" alt="" />
+              <img src="assets/img/svg/css3.svg" alt="" />
+              <img src="assets/img/svg/js.svg" alt="" />
+            </div>
+            <a
+              href="https://gabrielcarati.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="button button-outline">
+                <span>acessar</span>
+                <svg class="arrow" viewBox="0 0 24 24">
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJETOS PESSOAIS -->
+    <div id="pessoal" class="container p-5">
+      <h3 class="pretitle">confira os</h3>
+      <h2 class="title-large">projetos <br />pessoais</h2>
+      <div class="cases-content pt-5">
+        <!-- NUTRIFY -->
+        <div
+          class="cases-item"
+          style="
+            background: #f85f00;
+            translate: none;
+            rotate: none;
+            scale: none;
+            opacity: 1;
+            visibility: inherit;
+            transform: translate(0px, 0px);
+          "
+        >
+          <div class="cases-img-wrapper">
+            <a href="assets/img/nutrify/nutrify.png" data-fancybox="nutrify">
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/nutrify/nutrify.png"
+                alt="nutrify"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/nutrify/nutrify-1.png"
+              data-fancybox="nutrify"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/nutrify/nutrify-1.png"
+                alt="nutrify"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/nutrify/nutrify-2.png"
+              data-fancybox="nutrify"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/nutrify/nutrify-2.png"
+                alt="nutrify"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/nutrify/nutrify-3.png"
+              data-fancybox="nutrify"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/nutrify/nutrify-3.png"
+                alt="nutrify"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/nutrify/nutrify-4.png"
+              data-fancybox="nutrify"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/nutrify/nutrify-4.png"
+                alt="nutrify"
+                data-ll-status="loaded"
+              />
+            </a>
+          </div>
+          <div class="cases-info">
+            <div class="cases-title">Nutrify</div>
+            <p class="cases-desc">
+              Projeto de gerenciamento de Pacientes para Nutricionistas. Com o
+              Nutrify, os nutricionistas podem gerenciar facilmente seus
+              pacientes, acompanhar seu progresso e oferecer orientações
+              personalizadas de saúde.
+            </p>
+            <div class="d-flex gap-2 tech">
+              <img src="assets/img/svg/vite.svg" alt="" />
+              <img src="assets/img/svg/react.svg" alt="" />
+              <img src="assets/img/svg/typescript.svg" alt="" />
+              <img src="assets/img/svg/tailwind.svg" alt="" />
+              <img src="assets/img/svg/firebase.svg" alt="" />
+            </div>
+            <a
+              href="https://nutrifyapp.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button class="button button-outline">
+                <span>acessar</span>
+                <svg class="arrow" viewBox="0 0 24 24">
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- ECHO GESTOR -->
+        <div
+          class="cases-item"
+          style="
+            background: #52648b;
+            translate: none;
+            rotate: none;
+            scale: none;
+            opacity: 1;
+            visibility: inherit;
+            transform: translate(0px, 0px);
+          "
+        >
+          <div class="cases-img-wrapper">
+            <a
+              href="assets/img/echogestor/echogestor.png"
+              data-fancybox="echogestor"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/echogestor/echogestor.png"
+                alt="echogestor"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/echogestor/echogestor-1.png"
+              data-fancybox="echogestor"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/echogestor/echogestor-1.png"
+                alt="echogestor"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/echogestor/echogestor-2.png"
+              data-fancybox="echogestor"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/echogestor/echogestor-2.png"
+                alt="echogestor"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/echogestor/echogestor-3.png"
+              data-fancybox="echogestor"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/echogestor/echogestor-3.png"
+                alt="echogestor"
+                data-ll-status="loaded"
+              />
+            </a>
+          </div>
+          <div class="cases-info">
+            <div class="cases-title">Echo Gestor</div>
+            <p class="cases-desc">
+              Um web app criado operar gerenciar um empreendimento. Construído
+              com React JS, HTML, CSS, JavaScript, Material UI, banco de dados
+              Firebase e Toastify notifications. Crie sua conta, cadastre
+              clientes e produtos, administre sua agenda de negócios.
+            </p>
+            <div class="d-flex gap-2 tech">
+              <img src="assets/img/svg/react.svg" alt="" />
+              <img src="assets/img/svg/firebase.svg" alt="" />
+              <img src="assets/img/svg/materialui.svg" alt="" />
+              <img src="assets/img/svg/html5.svg" alt="" />
+              <img src="assets/img/svg/css3.svg" alt="" />
+              <img src="assets/img/svg/js.svg" alt="" />
+            </div>
+            <a
+              href="https://echogestor.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button class="button button-outline">
+                <span>acessar</span>
+                <svg class="arrow" viewBox="0 0 24 24">
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- KPOP GENERATION -->
+        <div
+          class="cases-item"
+          style="
+            background: #2d2d32;
+            translate: none;
+            rotate: none;
+            scale: none;
+            opacity: 1;
+            visibility: inherit;
+            transform: translate(0px, 0px);
+          "
+        >
+          <div class="cases-img-wrapper">
+            <a
+              href="assets/img/kpopgeneration/kpopgeneration.png"
+              data-fancybox="kpopgeneration"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/kpopgeneration/kpopgeneration.png"
+                alt="kpopgeneration"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/kpopgeneration/kpopgeneration-1.png"
+              data-fancybox="kpopgeneration"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/kpopgeneration/kpopgeneration-1.png"
+                alt="kpopgeneration"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/kpopgeneration/kpopgeneration-2.png"
+              data-fancybox="kpopgeneration"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/kpopgeneration/kpopgeneration-2.png"
+                alt="kpopgeneration"
+                data-ll-status="loaded"
+              />
+            </a>
+          </div>
+          <div class="cases-info">
+            <div class="cases-title">Kpop Generation</div>
+            <p class="cases-desc">
+              Projeto Fullstack onde o frontend consulta a API e exibe
+              informações sobre artistas de kpop organizado em categoria por
+              gerações. Também é possível acessar mais informações do artista,
+              como sua bibliografia e integração ao player do spotify.
+            </p>
+            <div class="d-flex gap-2 tech">
+              <img src="assets/img/svg/vite.svg" alt="" />
+              <img src="assets/img/svg/react.svg" alt="" />
+              <img src="assets/img/svg/typescript.svg" alt="" />
+              <img src="assets/img/svg/tailwind.svg" alt="" />
+              <img src="assets/img/svg/nodejs.svg" alt="" />
+              <img src="assets/img/svg/mongodb.svg" alt="" />
+              <img src="assets/img/svg/prisma.svg" alt="" />
+            </div>
+            <a
+              href="https://kpopgeneration.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button class="button button-outline">
+                <span>acessar</span>
+                <svg class="arrow" viewBox="0 0 24 24">
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- CADASTRO DE CLIENTES -->
+        <div
+          class="cases-item"
+          style="
+            background: #766f6a;
+            translate: none;
+            rotate: none;
+            scale: none;
+            opacity: 1;
+            visibility: inherit;
+            transform: translate(0px, 0px);
+          "
+        >
+          <div class="cases-img-wrapper">
+            <a
+              href="assets/img/cadastroclientes/cadastroclientes.png"
+              data-fancybox="cadastroclientes"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/cadastroclientes/cadastroclientes.png"
+                alt="cadastro clientes"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/cadastroclientes/cadastroclientes-1.png"
+              data-fancybox="cadastroclientes"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/cadastroclientes/cadastroclientes-1.png"
+                alt="cadastro clientes"
+                data-ll-status="loaded"
+              />
+            </a>
+          </div>
+          <div class="cases-info">
+            <div class="cases-title">Cadastro de Clientes</div>
+            <p class="cases-desc">
+              Um web app para gerenciar uma lista de clientes criado com Vite +
+              React e conexão com API ViaCEP. Adicione novos clientes com o
+              formulário, edite ou exclua e tenha sua lista salva no local
+              storage de seu navegador. Importe e exporte para seu dispositivo
+              sua lista de clientes em formato json.
+            </p>
+            <div class="d-flex gap-2 tech">
+              <img src="assets/img/svg/vite.svg" alt="" />
+              <img src="assets/img/svg/react.svg" alt="" />
+              <img src="assets/img/svg/typescript.svg" alt="" />
+              <img src="assets/img/svg/tailwind.svg" alt="" />
+            </div>
+            <a
+              href="https://cadastroclientenyc.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button class="button button-outline">
+                <span>acessar</span>
+                <svg class="arrow" viewBox="0 0 24 24">
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- BULÁRIO ELETRÔNICO -->
+        <div
+          class="cases-item"
+          style="
+            background: #287d61;
+            translate: none;
+            rotate: none;
+            scale: none;
+            opacity: 1;
+            visibility: inherit;
+            transform: translate(0px, 0px);
+          "
+        >
+          <div class="cases-img-wrapper">
+            <a
+              href="assets/img/bularioeletronico/bularioeletronico.png"
+              data-fancybox="bulario"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/bularioeletronico/bularioeletronico.png"
+                alt="bulario eletrônico"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/bularioeletronico/bulario-1.png"
+              data-fancybox="bulario"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/bularioeletronico/bulario-1.png"
+                alt="bulario eletrônico"
+                data-ll-status="loaded"
+              />
+            </a>
+          </div>
+          <div class="cases-info">
+            <div class="cases-title">Bulário eletrônico</div>
+            <p class="cases-desc">
+              Portal criado para realizar a busca por bulas de medicamentos.
+              Utilize os seletores de classificação “todos”, “antibióticos”,
+              “tarja vermelha” ou “outros” e pesquise pelo nome do remédio ou
+              laboratório. Projeto Frontend responsivo React JS, estilizado com
+              Tailwind CSS e alimentado com dados JSON.
+            </p>
+            <div class="d-flex gap-2 tech">
+              <img src="assets/img/svg/react.svg" alt="" />
+              <img src="assets/img/svg/tailwind.svg" alt="" />
+              <img src="assets/img/svg/html5.svg" alt="" />
+              <img src="assets/img/svg/css3.svg" alt="" />
+              <img src="assets/img/svg/js.svg" alt="" />
+            </div>
+            <a
+              href="https://bularioeletronico.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button class="button button-outline">
+                <span>acessar</span>
+                <svg class="arrow" viewBox="0 0 24 24">
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- MOVIE WEB APP -->
+        <div
+          class="cases-item"
+          style="
+            background: #413b52;
+            translate: none;
+            rotate: none;
+            scale: none;
+            opacity: 1;
+            visibility: inherit;
+            transform: translate(0px, 0px);
+          "
+        >
+          <div class="cases-img-wrapper">
+            <a
+              href="assets/img/moviewebapp/moviewebapp.png"
+              data-fancybox="moviewebapp"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/moviewebapp/moviewebapp.png"
+                alt="moviewebapp"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/moviewebapp/moviewebapp-1.png"
+              data-fancybox="moviewebapp"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/moviewebapp/moviewebapp-1.png"
+                alt="moviewebapp"
+                data-ll-status="loaded"
+              />
+            </a>
+            <a
+              href="assets/img/moviewebapp/moviewebapp-2.png"
+              data-fancybox="moviewebapp"
+              class="d-none"
+            >
+              <img
+                class="cases-img lazy entered loaded"
+                src="assets/img/moviewebapp/moviewebapp-2.png"
+                alt="moviewebapp"
+                data-ll-status="loaded"
+              />
+            </a>
+          </div>
+          <div class="cases-info">
+            <div class="cases-title">Movie Web App</div>
+            <p class="cases-desc">
+              Um web app criado com React JS, Material UI, JavaScript e conexão
+              com API. O site conta com quatro páginas para que você explore um
+              catálogo de filmes organizados por “em cartaz” na home, “em
+              breve”, “popular” e “melhores avaliados”.
+            </p>
+            <div class="d-flex gap-2 tech">
+              <img src="assets/img/svg/react.svg" alt="" />
+              <img src="assets/img/svg/materialui.svg" alt="" />
+              <img src="assets/img/svg/html5.svg" alt="" />
+              <img src="assets/img/svg/css3.svg" alt="" />
+              <img src="assets/img/svg/js.svg" alt="" />
+            </div>
+            <a
+              href="https://nyckaique.github.io/movies/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button class="button button-outline">
+                <span>acessar</span>
+                <svg class="arrow" viewBox="0 0 24 24">
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                  <path
+                    d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTATO -->
+    <div id="contato" class="container py-5 px-0">
+      <div class="contacts-left">
+        <h3 class="pretitle" style="opacity: 1; visibility: inherit">
+          vamos desenvolver
+        </h3>
+        <h2 class="title-large" style="opacity: 1; visibility: inherit">
+          seu projeto?
+        </h2>
+      </div>
+      <div class="contacts-socials">
+        <p class="desc mb-0">entre em contato:</p>
+        <div class="contacts-socials-content">
+          <a
+            class="contacts-socials-item"
+            href="https://wa.me/64992673386"
+            target="_blank"
+          >
+            <svg
+              class="svg-fill"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 4.86429C8.10536 4.86429 4.93929 8.03036 4.93393 11.925C4.93393 13.2589 5.30893 14.5607 6.01607 15.6804L6.18214 15.9482L5.46964 18.5518L8.14286 17.85L8.4 18.0054C9.48214 18.6482 10.725 18.9911 11.9946 18.9911H12C15.8893 18.9911 19.1411 15.825 19.1411 11.9304C19.1411 10.0446 18.3268 8.27143 16.9929 6.9375C15.6536 5.59821 13.8857 4.86429 12 4.86429ZM16.1518 14.9571C15.975 15.4554 15.1286 15.9054 14.7214 15.9643C14.0464 16.0661 13.5214 16.0125 12.1768 15.4339C10.05 14.5125 8.65714 12.3696 8.55 12.2304C8.44286 12.0911 7.68214 11.0786 7.68214 10.0339C7.68214 8.98929 8.22857 8.475 8.42679 8.26071C8.61964 8.04643 8.85 7.99286 8.99464 7.99286C9.13393 7.99286 9.27857 7.99286 9.40179 7.99821C9.53036 8.00357 9.70714 7.95 9.87857 8.3625C10.0554 8.78572 10.4786 9.83036 10.5321 9.9375C10.5857 10.0446 10.6232 10.1679 10.5482 10.3071C10.1411 11.1214 9.70714 11.0893 9.92679 11.4643C10.7464 12.8732 11.5661 13.3607 12.8143 13.9875C13.0286 14.0946 13.1518 14.0786 13.275 13.9339C13.3982 13.7946 13.8054 13.3125 13.9446 13.1036C14.0839 12.8893 14.2286 12.9268 14.4214 12.9964C14.6143 13.0661 15.6589 13.5804 15.8732 13.6875C16.0875 13.7946 16.2268 13.8482 16.2804 13.9339C16.3286 14.0357 16.3286 14.4643 16.1518 14.9571ZM21.4286 0H2.57143C1.15179 0 0 1.15179 0 2.57143V21.4286C0 22.8482 1.15179 24 2.57143 24H21.4286C22.8482 24 24 22.8482 24 21.4286V2.57143C24 1.15179 22.8482 0 21.4286 0ZM11.9946 20.4214C10.5696 20.4214 9.17143 20.0625 7.93393 19.3875L3.42857 20.5714L4.63393 16.1679C3.88929 14.8821 3.49821 13.4196 3.49821 11.9196C3.50357 7.2375 7.3125 3.42857 11.9946 3.42857C14.2661 3.42857 16.3982 4.3125 18.0054 5.91964C19.6071 7.52679 20.5714 9.65893 20.5714 11.9304C20.5714 16.6125 16.6768 20.4214 11.9946 20.4214Z"
+                fill="#1A1A1A"
+              />
+            </svg>
+            <div class="contacts-socials-item-text">
+              <span>whatsapp</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 24 24">
+              <path
+                d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+              ></path>
+              <path
+                d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            class="contacts-socials-item"
+            href="https://www.linkedin.com/in/nycollaskaique/"
+            target="_blank"
+          >
+            <svg
+              class="svg-fill"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.2857 0H1.70893C0.766071 0 0 0.776786 0 1.73036V22.2696C0 23.2232 0.766071 24 1.70893 24H22.2857C23.2286 24 24 23.2232 24 22.2696V1.73036C24 0.776786 23.2286 0 22.2857 0ZM7.25357 20.5714H3.69643V9.11786H7.25893V20.5714H7.25357ZM5.475 7.55357C4.33393 7.55357 3.4125 6.62679 3.4125 5.49107C3.4125 4.35536 4.33393 3.42857 5.475 3.42857C6.61071 3.42857 7.5375 4.35536 7.5375 5.49107C7.5375 6.63214 6.61607 7.55357 5.475 7.55357ZM20.5875 20.5714H17.0304V15C17.0304 13.6714 17.0036 11.9625 15.1821 11.9625C13.3286 11.9625 13.0446 13.4089 13.0446 14.9036V20.5714H9.4875V9.11786H12.9V10.6821H12.9482C13.425 9.78214 14.5875 8.83393 16.3179 8.83393C19.9179 8.83393 20.5875 11.2071 20.5875 14.2929V20.5714Z"
+                fill="#1A1A1A"
+              />
+            </svg>
+            <div class="contacts-socials-item-text">
+              <span>linkedin</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 24 24">
+              <path
+                d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+              ></path>
+              <path
+                d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            class="contacts-socials-item"
+            href="mailto:nycollaskaique@hotmail.com"
+            target="_blank"
+          >
+            <svg
+              class="svg-fill"
+              width="24"
+              height="18"
+              viewBox="0 0 24 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.5453 5.94375C23.7281 5.79844 24 5.93437 24 6.16406V15.75C24 16.9922 22.9922 18 21.75 18H2.25C1.00781 18 0 16.9922 0 15.75V6.16875C0 5.93438 0.267187 5.80312 0.454687 5.94844C1.50469 6.76406 2.89688 7.8 7.67813 11.2734C8.66719 11.9953 10.3359 13.5141 12 13.5047C13.6734 13.5188 15.375 11.9672 16.3266 11.2734C21.1078 7.8 22.4953 6.75938 23.5453 5.94375ZM12 12C13.0875 12.0188 14.6531 10.6313 15.4406 10.0594C21.6609 5.54531 22.1344 5.15156 23.5687 4.02656C23.8406 3.81562 24 3.4875 24 3.14062V2.25C24 1.00781 22.9922 0 21.75 0H2.25C1.00781 0 0 1.00781 0 2.25V3.14062C0 3.4875 0.159375 3.81094 0.43125 4.02656C1.86563 5.14687 2.33906 5.54531 8.55938 10.0594C9.34688 10.6313 10.9125 12.0188 12 12Z"
+                fill="#1A1A1A"
+              />
+            </svg>
+            <div class="contacts-socials-item-text">
+              <span>mail</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 24 24">
+              <path
+                d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+              ></path>
+              <path
+                d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            class="contacts-socials-item"
+            href="https://github.com/nyckaique"
+            target="_blank"
+          >
+            <svg
+              class="svg-fill"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.4286 0H2.57143C1.15179 0 0 1.15179 0 2.57143V21.4286C0 22.8482 1.15179 24 2.57143 24H21.4286C22.8482 24 24 22.8482 24 21.4286V2.57143C24 1.15179 22.8482 0 21.4286 0ZM14.8554 20.5554C14.4054 20.6357 14.2393 20.3571 14.2393 20.1268C14.2393 19.8375 14.25 18.3589 14.25 17.1643C14.25 16.3286 13.9714 15.7982 13.6446 15.5196C15.6268 15.3 17.7161 15.0268 17.7161 11.6036C17.7161 10.6286 17.3679 10.1411 16.8 9.51429C16.8911 9.28393 17.1964 8.33571 16.7089 7.10357C15.9643 6.87321 14.2607 8.0625 14.2607 8.0625C13.5536 7.86429 12.7875 7.7625 12.0321 7.7625C11.2768 7.7625 10.5107 7.86429 9.80357 8.0625C9.80357 8.0625 8.1 6.87321 7.35536 7.10357C6.86786 8.33036 7.16786 9.27857 7.26429 9.51429C6.69643 10.1411 6.42857 10.6286 6.42857 11.6036C6.42857 15.0107 8.42679 15.3 10.4089 15.5196C10.1518 15.75 9.92143 16.1464 9.84107 16.7143C9.33214 16.9446 8.03036 17.3411 7.25357 15.9696C6.76607 15.1232 5.8875 15.0536 5.8875 15.0536C5.01964 15.0429 5.82857 15.6 5.82857 15.6C6.40714 15.8679 6.81429 16.8964 6.81429 16.8964C7.33393 18.4875 9.81964 17.9518 9.81964 17.9518C9.81964 18.6964 9.83036 19.9071 9.83036 20.1268C9.83036 20.3571 9.66964 20.6357 9.21429 20.5554C5.67857 19.3714 3.20357 16.0071 3.20357 12.075C3.20357 7.15714 6.96429 3.42321 11.8821 3.42321C16.8 3.42321 20.7857 7.15714 20.7857 12.075C20.7911 16.0071 18.3911 19.3768 14.8554 20.5554ZM9.6 17.2821C9.49821 17.3036 9.40179 17.2607 9.39107 17.1911C9.38036 17.1107 9.45 17.0411 9.55179 17.0196C9.65357 17.0089 9.75 17.0518 9.76071 17.1214C9.77679 17.1911 9.70714 17.2607 9.6 17.2821ZM9.09107 17.2339C9.09107 17.3036 9.01071 17.3625 8.90357 17.3625C8.78571 17.3732 8.70536 17.3143 8.70536 17.2339C8.70536 17.1643 8.78571 17.1054 8.89286 17.1054C8.99464 17.0946 9.09107 17.1536 9.09107 17.2339ZM8.35714 17.175C8.33571 17.2446 8.22857 17.2768 8.1375 17.2446C8.03571 17.2232 7.96607 17.1429 7.9875 17.0732C8.00893 17.0036 8.11607 16.9714 8.20714 16.9929C8.31429 17.025 8.38393 17.1054 8.35714 17.175ZM7.69821 16.8857C7.65 16.9446 7.54821 16.9339 7.46786 16.8536C7.3875 16.7839 7.36607 16.6821 7.41964 16.6339C7.46786 16.575 7.56964 16.5857 7.65 16.6661C7.71964 16.7357 7.74643 16.8429 7.69821 16.8857ZM7.21071 16.3982C7.1625 16.4304 7.07143 16.3982 7.0125 16.3179C6.95357 16.2375 6.95357 16.1464 7.0125 16.1089C7.07143 16.0607 7.1625 16.0982 7.21071 16.1786C7.26964 16.2589 7.26964 16.3554 7.21071 16.3982ZM6.8625 15.8786C6.81429 15.9268 6.73393 15.9 6.675 15.8464C6.61607 15.7768 6.60536 15.6964 6.65357 15.6589C6.70179 15.6107 6.78214 15.6375 6.84107 15.6911C6.9 15.7607 6.91071 15.8411 6.8625 15.8786ZM6.50357 15.4821C6.48214 15.5304 6.4125 15.5411 6.35357 15.5036C6.28393 15.4714 6.25179 15.4125 6.27321 15.3643C6.29464 15.3321 6.35357 15.3161 6.42321 15.3429C6.49286 15.3804 6.525 15.4393 6.50357 15.4821Z"
+                fill="#1A1A1A"
+              />
+            </svg>
+            <div class="contacts-socials-item-text">
+              <span>github</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 24 24">
+              <path
+                d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+              ></path>
+              <path
+                d="M10.7186 17.7593L4.83753 11.8782L3.46777 13.248L11.6873 21.4675L12.3722 20.7826L19.9068 13.248L18.537 11.8782L12.656 17.7593L12.656 2.09326H10.7186L10.7186 17.7593Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="contacts-owner">
+        <div class="contacts-media__wrapper">
+          <img
+            class="contacts-media lazy entered loading"
+            alt="Nycollas Kaique"
+            style="
+              transform: translate3d(0px, 0px, 0px) scale(1.1063, 1.1063);
+              translate: none;
+              rotate: none;
+              scale: none;
+            "
+            src="assets/img/nycollas/nycollas.png"
+            data-ll-status="loading"
+          />
+        </div>
+        <p class="contacts-title">encontre comigo a solução ideal para você</p>
+      </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer id="footer" class="container py-3 px-0">
+      <p class="desc text-center">Desenvolvido por Nycollas Kaique © 2024</p>
+    </footer>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/fancybox.umd.js"></script>
+    <script src="assets/js/lenis.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
