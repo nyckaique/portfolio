@@ -17,6 +17,10 @@ $(document).ready(function () {
   });
 
   //fancybox
+  Fancybox.bind('[data-fancybox="draraujo"]', {
+    infinite: true,
+    arrows: true,
+  });
   Fancybox.bind('[data-fancybox="gabriel"]', {
     infinite: true,
     arrows: true,
