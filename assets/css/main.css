@@ -803,6 +803,11 @@ a:visited {
   -webkit-transition: scale var(--transition-default);
   transition: scale var(--transition-default);
 }
+@media screen and (max-width: 45em) {
+  .cases-img {
+    height: 250px;
+  }
+}
 
 .cases-info {
   padding: 1.875rem;
@@ -1206,10 +1211,10 @@ a:visited {
   .container-hero-items {
     padding-left: 2rem;
     & > div:first-child {
-      padding-left: 3rem;
+      padding-left: 1.5rem;
     }
     & > div:nth-child(2) {
-      padding-left: 2.5rem;
+      padding-left: 1rem;
     }
   }
 }
