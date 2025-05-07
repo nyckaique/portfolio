@@ -4,7 +4,8 @@
   --white-rgb: 255, 255, 255;
   --black-rgb: 26, 26, 26;
   --grey: #a3a3a3;
-  --grey-light: #f6f6f6;
+  --grey-light-light: #fafafa;
+  --grey-light: #f0f0f0;
   --grey-dark: #3f3f3f;
   --purple: #5929a0;
   --font-default: "Nimbus Sans L", sans-serif;
@@ -34,7 +35,7 @@
 body,
 html {
   font-family: var(--font-default);
-  background: light-dark(var(--white), var(--black));
+  background: light-dark(var(--grey-light-light), var(--black));
   color: light-dark(var(--black), var(--white));
 }
 
@@ -694,6 +695,7 @@ a:visited {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.875rem;
+  grid-auto-rows: 1fr;
 }
 
 @media screen and (max-width: 111.25em) {
@@ -719,6 +721,7 @@ a:visited {
   border-radius: var(--item-border);
   overflow: hidden;
   background: #444;
+  height: 100%;
 }
 
 .cases-item .button {
@@ -792,6 +795,7 @@ a:visited {
 }
 
 .cases-img {
+  height: 300px;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -803,6 +807,12 @@ a:visited {
 .cases-info {
   padding: 1.875rem;
   color: var(--white);
+  height: calc(100% - 300px);
+  display: flex;
+  flex-direction: column;
+}
+.cases-info > a{
+  margin-top: auto;
 }
 
 @media screen and (max-width: 47.9375em) {
@@ -1257,7 +1267,7 @@ a:visited {
 }
 header {
   background-color: light-dark(
-    rgba(var(--white-rgb), 0.9),
+    rgba(var(--grey-light-light), 0.9),
     rgba(var(--black-rgb), 0.9)
   );
   backdrop-filter: blur(4px);
@@ -1291,7 +1301,7 @@ header a {
 
 .sobre-item div:first-child img {
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover;
   transition: all var(--transition-default);
 }
@@ -1329,4 +1339,8 @@ header a {
 }
 #hero .pretitle span {
   opacity: 0;
+}
+
+.fs-7 {
+  font-size: 0.875rem;
 }

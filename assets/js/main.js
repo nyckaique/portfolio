@@ -6,7 +6,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 1000,
     autoplaySpeed: 4000,
-    autoplayHoverPause: false,
+    autoplayHoverPause: true,
     slideTransition: "linear",
     items: 3,
     responsive: {
@@ -16,7 +16,22 @@ $(document).ready(function () {
     },
   });
 
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
   //fancybox
+  Fancybox.bind('[data-fancybox="afbrasilia"]', {
+    infinite: true,
+    arrows: true,
+  });
+  Fancybox.bind('[data-fancybox="terraz"]', {
+    infinite: true,
+    arrows: true,
+  });
+  Fancybox.bind('[data-fancybox="dra-karline-campos"]', {
+    infinite: true,
+    arrows: true,
+  });
   Fancybox.bind('[data-fancybox="draraujo"]', {
     infinite: true,
     arrows: true,
