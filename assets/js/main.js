@@ -20,6 +20,10 @@ $(document).ready(function () {
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
   //fancybox
+  Fancybox.bind('[data-fancybox="plani"]', {
+    infinite: true,
+    arrows: true,
+  });
   Fancybox.bind('[data-fancybox="rvm"]', {
     infinite: true,
     arrows: true,
