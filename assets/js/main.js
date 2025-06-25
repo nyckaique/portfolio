@@ -20,7 +20,7 @@ $(document).ready(function () {
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
   //fancybox
-  Fancybox.bind('[data-fancybox="plani"]', {
+  Fancybox.bind('[data-fancybox="plani-fb"]', {
     infinite: true,
     arrows: true,
   });
@@ -60,7 +60,7 @@ $(document).ready(function () {
     infinite: true,
     arrows: true,
   });
-  Fancybox.bind('[data-fancybox="nutrify"]', {
+  Fancybox.bind('[data-fancybox="nutrify-fb"]', {
     infinite: true,
     arrows: true,
   });
