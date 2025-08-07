@@ -20,6 +20,14 @@ $(document).ready(function () {
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
   //fancybox
+  Fancybox.bind('[data-fancybox="novo-valongo"]', {
+    infinite: true,
+    arrows: true,
+  });
+  Fancybox.bind('[data-fancybox="tabelionato"]', {
+    infinite: true,
+    arrows: true,
+  });
   Fancybox.bind('[data-fancybox="plani-fb"]', {
     infinite: true,
     arrows: true,
